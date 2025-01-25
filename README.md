@@ -13,8 +13,6 @@ Montaño-Gutierrez, L. F., Ohta, S., Kustatscher, G., Earnshaw, W. C. & Rappsilb
 パッケージは以下のコマンドでインストールされます。
 
 ``` r
-install.packages("devtools")
-install.packages("usethis")
 install.packages("remotes")
 remotes::install_github("rafysta/nanoRFL")
 ```
