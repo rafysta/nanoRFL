@@ -10,7 +10,7 @@ Montaño-Gutierrez, L. F., Ohta, S., Kustatscher, G., Earnshaw, W. C. & Rappsilb
 
 
 ## Installation
-パッケージは以下のコマンドでインストールされます。
+パッケージはRstudioのConsoleで以下のコマンドをタイプすることでインストールされます。
 
 ``` r
 install.packages("remotes")
@@ -18,6 +18,7 @@ remotes::install_github("rafysta/nanoRFL")
 ```
 
 ## 解析の例
+Rstudio上で、以下のコマンドを実行してください。
 
 ### ライブラリーの読み込み
 ``` r
