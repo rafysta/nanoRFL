@@ -26,13 +26,13 @@ library(nanoRFL)
 
 ### データの読み込み
 ``` r
-FILE_Proteomics_data <- "H:/work/Project/061_20250124_Ohta_program/received/2025-01-24_nanoRF/Proteomics_RNAseq_data_for_nanoRF.xlsx"
+FILE_Proteomics_data <- "Proteomics_RNAseq_data_for_nanoRF.xlsx"
 rf <- loadProteomicsData(rf, file = FILE_Proteomics_data, column.ratio = c(8:12), column.target = c(8, 9, 11, 12))
 ```
 
 ### Training data setのIDの読み込み
 ``` r
-rf <- loadIDfile(rf, file = "H:/work/Project/061_20250124_Ohta_program/received/2025-01-24_nanoRF/load_training_set_ids20250110.R")
+rf <- loadIDfile(rf, file = "load_training_set_ids20250110.R")
 ```
 
 ### 読み込んだIDlistを表示
@@ -62,17 +62,17 @@ rf <- runRF(rf)
 
 ### output table as text file
 ``` r
-outputTable(rf, file = "H:/work/Project/061_20250124_Ohta_program/out/2025-01-24_check_original/RF_score_result.txt")
+outputTable(rf, file = "RF_score_result.txt")
 ```
 
 ### output cut off value
 ``` r
-outputCutOff(rf, file = "H:/work/Project/061_20250124_Ohta_program/out/2025-01-24_check_original/RF_score_cutoff.txt")
+outputCutOff(rf, file = "RF_score_cutoff.txt")
 ```
 
 ### 予測結果のプロット
 ``` r
-plotPrediction(rf, output_dir = "H:/work/Project/061_20250124_Ohta_program/out/2025-01-24_check_original/img/")
+plotPrediction(rf, output_dir = "out/2025-01-24_test/img/")
 ```
 
 
