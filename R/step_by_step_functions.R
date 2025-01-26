@@ -225,11 +225,7 @@ plotPrediction <- function(rf, output_dir){
     save_plot(paste0(output_dir, "RF2_score_for_", target, ".png"), p, base_width = 6, base_height = 2, dpi= 200, unit = "in")
     save_plot(paste0(output_dir, "RF2_score_for_", target, ".pdf"), p, base_width = 6, base_height = 2, dpi= 200, unit = "in")
   }
-
-
 }
-
-
 
 
 

@@ -100,6 +100,13 @@ plotPrediction(rf, output_dir = "out/2025-01-24_test/img/")
 赤色(T)は、Training setに用いたIDのスコア。青色(F)は、Negative trainingに用いたIDのスコア。オレンジ色(Candidate)は、閾値以上であるID。灰色(Other)は、閾値よりも低いID。
 
 
+### nanoRF objectの保存と読み込み
+解析に利用したすべての情報、および、解析結果は、"rf"に保存されているので、これを保存・読み取りすることで、以前の解析を再開することができます。
 
+``` r
+# rf objectの保存
+saveRDS(rf, file = "/path/to/output/file.rds")
 
-
+# rf objectの読み込み
+rf <- readRDS(file = "/path/to/output/file.rds")
+```
